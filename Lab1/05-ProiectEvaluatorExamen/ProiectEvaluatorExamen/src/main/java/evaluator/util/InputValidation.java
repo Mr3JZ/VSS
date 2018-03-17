@@ -20,41 +20,16 @@ public class InputValidation {
 		
 	}
 	
-	public static void validateVarianta1(String varianta1) throws InputValidationFailedException{
+	public static void validateVarianta(String varianta, int nr) throws InputValidationFailedException{
 		
-		varianta1 = varianta1.trim();
+		varianta = varianta.trim();
 		
-		if(varianta1.equals(""))
-			throw new InputValidationFailedException("Varianta1 este vida!");
-		if(!String.valueOf(varianta1.charAt(0)).equals("1") || !String.valueOf(varianta1.charAt(1)).equals(")"))
-			throw new InputValidationFailedException("Varianta1 nu incepe cu '1)'!");
-		if(varianta1.length() > 50)
+		if(varianta.equals(""))
+			throw new InputValidationFailedException("Varianta " + nr + " este vida!");
+		if(!String.valueOf(varianta.charAt(0)).equals(String.valueOf(nr)) || !String.valueOf(varianta.charAt(1)).equals(")"))
+			throw new InputValidationFailedException("Varianta " + nr + " nu incepe cu '" + nr + ")'!");
+		if(varianta.length() > 50)
 			throw new InputValidationFailedException("Lungimea variantei1 depaseste 50 de caractere!" );
-	}
-	
-	public static void validateVarianta2(String varianta2) throws InputValidationFailedException{
-		
-		varianta2 = varianta2.trim();
-		
-		if(varianta2.equals(""))
-			throw new InputValidationFailedException("Varianta2 este vida!");
-		if(!String.valueOf(varianta2.charAt(0)).equals("2") || !String.valueOf(varianta2.charAt(1)).equals(")"))
-			throw new InputValidationFailedException("Varianta2 nu incepe cu '2)'!");
-		if(varianta2.length() > 50)
-			throw new InputValidationFailedException("Lungimea variantei2 depaseste 50 de caractere!" );
-	}
-	
-	public static void validateVarianta3(String varianta3) throws InputValidationFailedException{
-		
-		varianta3 = varianta3.trim();
-		
-		if(varianta3.equals(""))
-			throw new InputValidationFailedException("Varianta3 este vida!");
-		if(!String.valueOf(varianta3.charAt(0)).equals("3") || !String.valueOf(varianta3.charAt(1)).equals(")"))
-			throw new InputValidationFailedException("Varianta3 nu incepe cu '3)'!");
-		if(varianta3.length() > 50)
-			throw new InputValidationFailedException("Lungimea variantei3 depaseste 50 de caractere!" );
-	
 	}
 	
 	public static void validateVariantaCorecta(String variantaCorecta) throws InputValidationFailedException{

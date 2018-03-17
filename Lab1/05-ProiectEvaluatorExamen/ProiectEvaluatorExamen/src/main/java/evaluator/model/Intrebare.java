@@ -3,11 +3,12 @@ package evaluator.model;
 import evaluator.util.InputValidation;
 import evaluator.exception.InputValidationFailedException;
 
+import java.util.ArrayList;
+
 public class Intrebare {
 	
 	private String enunt;
-	private String varianta1;
-	private String varianta2;
+	private ArrayList<String> variante = new ArrayList<>();
 	private String variantaCorecta;
 	private String domeniu;
 	
@@ -18,14 +19,14 @@ public class Intrebare {
 			String variantaCorecta, String domeniu) throws InputValidationFailedException {
 		
 		InputValidation.validateEnunt(enunt);
-		InputValidation.validateVarianta1(varianta1);
-		InputValidation.validateVarianta2(varianta2);
+		InputValidation.validateVarianta(varianta1,1);
+		InputValidation.validateVarianta(varianta2,2);
 		InputValidation.validateVariantaCorecta(variantaCorecta);
 		InputValidation.validateDomeniu(domeniu);
 		
 		this.enunt = enunt;
-		this.varianta1 = varianta1;
-		this.varianta2 = varianta2;
+		variante.add(varianta1);
+		variante.add(varianta2);
 		this.variantaCorecta = variantaCorecta;
 		this.domeniu = domeniu;
 	}
@@ -37,19 +38,15 @@ public class Intrebare {
 	public void setEnunt(String enunt) {
 		this.enunt = enunt;
 	}
-	public String getVarianta1() {
-		return varianta1;
-	}
-	public void setVarianta1(String varianta1) {
-		this.varianta1 = varianta1;
-	}
-	public String getVarianta2() {
-		return varianta2;
-	}
-	public void setVarianta2(String varianta2) {
-		this.varianta2 = varianta2;
-	}
-	public String getVariantaCorecta() {
+
+    public ArrayList<String> getVariante() {
+        return variante;
+    }
+
+    public void addVarianta(String varianta) {
+        this.variante.add(varianta);
+    }
+    public String getVariantaCorecta() {
 		return variantaCorecta;
 	}
 	public void setVariantaCorecta(String variantaCorecta) {
@@ -66,9 +63,14 @@ public class Intrebare {
 	public boolean equals(Object obj) {
 		if(obj instanceof Intrebare){
 			Intrebare i = (Intrebare) obj;
+			int index = 0;
+			while(index<variante.size()) {
+			    if(!this.variante.get(index).equals(i.getVariante().get(index))) {
+			        return false;
+                }
+                index++;
+            }
 			if(this.enunt.equals(i.getEnunt()) &&
-			   this.varianta1.equals(i.getVarianta1()) &&
-			   this.varianta2.equals(i.getVarianta2()) &&
 			   this.variantaCorecta.equals(i.getVariantaCorecta()) &&
 			   this.domeniu.equals(i.getDomeniu()))
 				return true;
@@ -76,4 +78,12 @@ public class Intrebare {
 		return false;
 	}
 
+	@Override
+	public String toString() {
+	    String varianteString = "";
+	    for(String str : this.variante) {
+            varianteString = varianteString.concat(str + " ");
+        }
+		return this.enunt + " " + varianteString + this.variantaCorecta + " " + this.domeniu;
+	}
 }

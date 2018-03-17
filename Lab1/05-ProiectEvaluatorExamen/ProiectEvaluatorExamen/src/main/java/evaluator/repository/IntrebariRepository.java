@@ -3,11 +3,7 @@ package evaluator.repository;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 
 import evaluator.model.Intrebare;
@@ -15,7 +11,7 @@ import evaluator.exception.DuplicateIntrebareException;
 
 public class IntrebariRepository {
 	
-	private List<Intrebare> intrebari;
+	private List<Intrebare> intrebari = new ArrayList<>();
 	
 	public IntrebariRepository() {
 		setIntrebari(new LinkedList<Intrebare>());
@@ -34,11 +30,6 @@ public class IntrebariRepository {
 		return false;
 	}
 	
-	public Intrebare pickRandomIntrebare(){
-		Random random = new Random();
-		return intrebari.get(random.nextInt(intrebari.size()));
-	}
-	
 	public int getNumberOfDistinctDomains(){
 		return getDistinctDomains().size();
 		
@@ -48,6 +39,7 @@ public class IntrebariRepository {
 		Set<String> domains = new TreeSet<String>();
 		for(Intrebare intrebre : intrebari)
 			domains.add(intrebre.getDomeniu());
+        System.out.println("Domenii distincte " + domains.size());
 		return domains;
 	}
 	
@@ -85,23 +77,24 @@ public class IntrebariRepository {
 				}
 				intrebare = new Intrebare();
 				intrebare.setEnunt(intrebareAux.get(0));
-				intrebare.setVarianta1(intrebareAux.get(1));
-				intrebare.setVarianta2(intrebareAux.get(2));
-				intrebare.setVariantaCorecta(intrebareAux.get(4));
-				intrebare.setDomeniu(intrebareAux.get(5));
-				intrebari.add(intrebare);
+				intrebare.addVarianta(intrebareAux.get(1));
+				intrebare.addVarianta(intrebareAux.get(2));
+				intrebare.setVariantaCorecta(intrebareAux.get(3));
+				intrebare.setDomeniu(intrebareAux.get(4));
+				if(!exists(intrebare))
+				    intrebari.add(intrebare);
 				line = br.readLine();
 			}
 		
 		}
-		catch (IOException e) {
-			// TODO: handle exception
+		catch (IOException ex) {
+			ex.printStackTrace();
 		}
 		finally{
 			try {
 				br.close();
-			} catch (IOException e) {
-				// TODO: handle exception
+			} catch (IOException ex) {
+				ex.printStackTrace();
 			}
 		}
 		
@@ -113,7 +106,8 @@ public class IntrebariRepository {
 	}
 
 	public void setIntrebari(List<Intrebare> intrebari) {
-		this.intrebari = intrebari;
+
+		this.intrebari.addAll(intrebari);
 	}
 	
 }

@@ -1,0 +1,7 @@
+
+Un profesor doreste dezvoltarea unui program pentru gestionarea subiectelor pentru un test de tip grila. Programul va avea urmatoarele functionalitati:
+i. adaugarea unei noi intrebari pentru un anumit domeniu (enunt intrebare, raspuns 1, raspuns 2, raspuns 3, raspunsul corect, domeniul) in setul de intrebari disponibile; domeniile noi se introduc impreuna cu intrebarea noua; intrebariile noi nu se introd in fisier automat;
+ii. crearea unui nou test (testul va contine 5 intrebari alese aleator din cele disponibile, cate o intrebare din fiecare domeniu); testul se va afisa pe ecran
+iii. afisarea unei statistici cu numarul de intrebari organizate pe domenii, statistica pentru toate intrebariile din program
+
+Programul va porni fara nicio intrebare incarcata.

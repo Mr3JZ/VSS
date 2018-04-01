@@ -3,7 +3,7 @@ package evaluator.util;
 
 import evaluator.exception.InputValidationFailedException;
 
-public class InputValidation {
+public class 	InputValidation {
 
 	public static void validateEnunt(String enunt) throws InputValidationFailedException{
 	

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeAll;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class IntrebariRepositoryTest {
+public class IntrebariRepositoryTest {
 
     static IntrebariRepository intrebariRepository;
 

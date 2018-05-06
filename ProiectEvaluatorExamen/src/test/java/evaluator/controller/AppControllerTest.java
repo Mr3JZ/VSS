@@ -5,22 +5,21 @@ import evaluator.repository.IntrebariRepository;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AppControllerTest {
 
-    static AppController appController;
-    @BeforeAll
-    static void init() {
-        appController = new AppController();
-    }
+public class AppControllerTest {
+
+    AppController appController;
+
     @BeforeEach
-    void clear() {
+    public void clear() {
         appController = new AppController();
     }
 
-    void addWithSameDomains() {
+    public void addWithSameDomains() {
         try {
             appController.addNewIntrebare(new Intrebare("Enunt1?", "1)Varianta 11", "2)Varianta 21", "1", "Domeniu"));
             appController.addNewIntrebare(new Intrebare("Enunt2?", "1)Varianta 12", "2)Varianta 22", "1", "Domeniu"));
@@ -32,7 +31,7 @@ class AppControllerTest {
         }
     }
 
-    void addWithDifferentDomains() {
+    public void addWithDifferentDomains() {
         try {
             appController.addNewIntrebare(new Intrebare("Enunt1?", "1)Varianta 11", "2)Varianta 21", "1", "Domeniu1"));
             appController.addNewIntrebare(new Intrebare("Enunt2?", "1)Varianta 12", "2)Varianta 22", "1", "Domeniu2"));
@@ -45,7 +44,7 @@ class AppControllerTest {
     }
 
     @Test
-    void Req02_TC01() {
+    public void Req02_TC01() {
         try {
             appController.createNewTest();
             assert false;
@@ -55,7 +54,7 @@ class AppControllerTest {
     }
 
     @Test
-    void Req02_TC02() {
+    public void Req02_TC02() {
         try {
             addWithSameDomains();
             appController.createNewTest();
@@ -66,7 +65,7 @@ class AppControllerTest {
     }
 
     @Test
-    void Req02_TC03() {
+    public void Req02_TC03() {
         try {
             addWithDifferentDomains();
             appController.createNewTest();

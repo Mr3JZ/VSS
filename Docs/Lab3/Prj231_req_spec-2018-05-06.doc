@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>reqspec Prj231 - VVSS</title>
+<link type="text/css" rel="stylesheet" href="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo" height="53" src="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></div>
+<div class="doc_title"><p>Requirements Specification Document</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Prj231</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 06/05/2018</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><br><b><p style="padding-left: 20px;"><a href="#toc_1">1. btir2010_ReqSpec : VVSS</a></p></b>
+<p style="padding-left: 45px;"><a href="#toc_req14102">btir2010_Req01 : Lab2</a></p><p style="padding-left: 45px;"><a href="#toc_req14104">btir2010_Req02 : Lab3</a></p><p style="padding-left: 45px;"><a href="#toc_req14106">btir2010_Req03 : Lab4</a></p></div><p style="page-break-before: always"></p><table class="req_spec"><tr><th colspan="2"><h2 class="doclevel"> <span class="label">1. Requirements Spec.:</span> btir2010_ReqSpec : VVSS</th></tr></h2>
+<a name='toc_1'></a>
+<tr><td width="20%"><span class="label">revision</span></td><td> 1</td></tr>
+<tr><td width="20%"><span class="label">Author</span></td><td> btir2010</td></tr>
+<tr><td width="20%"><span class="label">Type</span></td><td>Section</td></tr><tr><td width="20%"><span class="label">Total count of requirements (Coverage)</span></td><td>N/A (3/0)</td></tr><tr><td colspan="2"></td></tr></table><br/>
+<table class="req" ><tr><th colspan="2"><span class="label">Requirement:</span> btir2010_Req01 : Lab2</th></tr>
+<tr><td valign="top"><span class="label">Version :</span></td><td>1</td></tr>
+<tr><td valign="top"><span class="label">revision:</span></td><td>2</td></tr>
+<a name="toc_req14102"></a><tr><td valign="top"><span class="label">Author:</span></td><td>btir2010</td></tr>
+<tr><td width="20%"><span class="label">Status</span></td><td>Draft</td></tr><tr><td width="20%"><span class="label">Type</span></td><td>Use Case</td></tr><tr><td width="20%"><span class="label">Coverage</span></td><td>400% (4/1)</td></tr><tr><td colspan="2"> <br/><div class="page" title="Page 1">
+	<div class="layoutArea">
+		<div class="column">
+			<p>
+				<span style="font-size: 11.000000pt; font-family: 'Calibri'">Adaugarea unei noi intrebari pentru un anumit domeniu (enunt intrebare, raspuns 1, raspuns 2, raspuns 3, raspunsul corect, domeniul) in setul de intrebari disponibile.</span></p>
+		</div>
+	</div>
+</div>
+<p>
+	&nbsp;</p></td></tr><tr><td width="20%"><span class="label">Related Test Cases</span></td><td>6 : Valid ECP<br/>7 : Non-valid ECP<br/>8 : Valid BVA<br/>9 : Non-valid BVA<br/></td></tr></table><br/><table class="req" ><tr><th colspan="2"><span class="label">Requirement:</span> btir2010_Req02 : Lab3</th></tr>
+<tr><td valign="top"><span class="label">Version :</span></td><td>1</td></tr>
+<tr><td valign="top"><span class="label">revision:</span></td><td>3</td></tr>
+<a name="toc_req14104"></a><tr><td valign="top"><span class="label">Author:</span></td><td>btir2010</td></tr>
+<tr><td width="20%"><span class="label">Status</span></td><td>Draft</td></tr><tr><td width="20%"><span class="label">Type</span></td><td>Use Case</td></tr><tr><td width="20%"><span class="label">Coverage</span></td><td>200% (2/1)</td></tr><tr><td colspan="2"> <br/><div class="page" title="Page 1">
+	<div class="layoutArea">
+		<div class="column">
+			<div class="page" title="Page 1">
+				<div class="layoutArea">
+					<div class="column">
+						<p>
+							<span style="font-size: 11.000000pt; font-family: 'Calibri'">Crearea unui nou test (testul va contine 5 intrebari alese aleator din cele disponibile, din domenii diferite);&nbsp;</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<p>
+	&nbsp;</p></td></tr><tr><td width="20%"><span class="label">Related Test Cases</span></td><td>169 : Non-valid<br/>170 : Valid<br/></td></tr></table><br/><table class="req" ><tr><th colspan="2"><span class="label">Requirement:</span> btir2010_Req03 : Lab4</th></tr>
+<tr><td valign="top"><span class="label">Version :</span></td><td>1</td></tr>
+<tr><td valign="top"><span class="label">revision:</span></td><td>1</td></tr>
+<a name="toc_req14106"></a><tr><td valign="top"><span class="label">Author:</span></td><td>btir2010</td></tr>
+<tr><td width="20%"><span class="label">Status</span></td><td>Draft</td></tr><tr><td width="20%"><span class="label">Type</span></td><td>Use Case</td></tr><tr><td width="20%"><span class="label">Coverage</span></td><td>0% (0/1)</td></tr><tr><td colspan="2"> <br/></td></tr></table><br/>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="lab07.features.search.TrelloTesting" skipped="0" tests="4" time="37.73" timestamp="2018-05-21T10:29:13.545+03:00[Europe/Bucharest]"><testcase classname="lab07.features.search.TrelloTesting" name="Valid signup test"><failure message="The following error occurred: Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">The following error occurred: Expected enabled element was not enabled</failure><system-err>The following error occurred: Expected enabled element was not enabled
+lab07.pages.TrelloRegisterPage.signup(TrelloRegisterPage.java:36)
+lab07.steps.serenity.TrelloRegisterSteps.signup(TrelloRegisterSteps.java:45)
+lab07.steps.serenity.TrelloRegisterSteps.completeValidRegister(TrelloRegisterSteps.java:30)
+lab07.features.search.TrelloTesting.validSignupTest(TrelloTesting.java:46)
+</system-err></testcase><testcase classname="lab07.features.search.TrelloTesting" name="Valid login test"/><testcase classname="lab07.features.search.TrelloTesting" name="Invalid signup test"><failure message="The following error occurred: Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">The following error occurred: Expected enabled element was not enabled</failure><system-err>The following error occurred: Expected enabled element was not enabled
+lab07.pages.TrelloRegisterPage.signup(TrelloRegisterPage.java:36)
+lab07.steps.serenity.TrelloRegisterSteps.signup(TrelloRegisterSteps.java:45)
+lab07.steps.serenity.TrelloRegisterSteps.completeInvalidLogin(TrelloRegisterSteps.java:39)
+lab07.features.search.TrelloTesting.invalidSignupTest(TrelloTesting.java:53)
+</system-err></testcase><testcase classname="lab07.features.search.TrelloTesting" name="Invalid login test"/></testsuite>

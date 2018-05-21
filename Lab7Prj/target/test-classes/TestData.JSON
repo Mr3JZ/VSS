@@ -1,0 +1,12 @@
+[
+  {
+    "Username": "balastudor",
+    "Password": "Lluudduuss11",
+    "ShouldError": 0
+  },
+  {
+    "Username": "asdasdhjasd",
+    "Password": "asjdansdjkad",
+    "ShouldError": 1
+  }
+]

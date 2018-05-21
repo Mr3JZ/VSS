@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Trello testing","Valid signup test","SUCCESS","2018-05-19T20:21:27.668+03:00[Europe/Bucharest]","0.0","9.9"
+"Trello testing","Valid login test","SUCCESS","2018-05-19T20:21:38.003+03:00[Europe/Bucharest]","0.0","8.05"
+"Trello testing","Invalid signup test","SUCCESS","2018-05-19T20:21:46.108+03:00[Europe/Bucharest]","0.0","3.77"
+"Trello testing","Invalid login test","SUCCESS","2018-05-19T20:21:49.918+03:00[Europe/Bucharest]","0.0","3.18"
